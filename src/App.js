@@ -1,8 +1,14 @@
 import React, {Component} from 'react';
+import Paragraph from './Paragraph';
 
-class App extends Component {
+export default class App extends Component {
     render() {
-        return (<h1>REACT Tester, Meow!</h1>);
+        return (
+            <div className="my-app">
+                <h1>Prrrrr</h1>
+                <Paragraph text="First Kitteh" />
+                <Paragraph text="Second Kitteh" />
+            </div>
+        );
     }
 }
-export default App;

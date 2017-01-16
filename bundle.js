@@ -21537,6 +21537,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _Paragraph = __webpack_require__(266);
+
+	var _Paragraph2 = _interopRequireDefault(_Paragraph);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var App = function (_Component) {
@@ -21551,9 +21555,15 @@
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                'h1',
-	                null,
-	                'REACT Tester, Meow!'
+	                'div',
+	                { className: 'my-app' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Prrrrr'
+	                ),
+	                _react2.default.createElement(_Paragraph2.default, { text: 'First Kitteh' }),
+	                _react2.default.createElement(_Paragraph2.default, { text: 'Second Kitteh' })
 	            );
 	        }
 	    }]);
@@ -23091,6 +23101,65 @@
 	var $export = __webpack_require__(192)
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	$export($export.S, 'Object', {create: __webpack_require__(223)});
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(180);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(206);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(207);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(211);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(258);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Paragraph = function (_Component) {
+	    (0, _inherits3.default)(Paragraph, _Component);
+
+	    function Paragraph() {
+	        (0, _classCallCheck3.default)(this, Paragraph);
+	        return (0, _possibleConstructorReturn3.default)(this, (Paragraph.__proto__ || (0, _getPrototypeOf2.default)(Paragraph)).apply(this, arguments));
+	    }
+
+	    (0, _createClass3.default)(Paragraph, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'p',
+	                null,
+	                this.props.text
+	            );
+	        }
+	    }]);
+	    return Paragraph;
+	}(_react.Component);
+
+	exports.default = Paragraph;
 
 /***/ }
 /******/ ]);

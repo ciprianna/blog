@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
     module: {
@@ -25,5 +26,11 @@ module.exports = {
     },
     entry: [
         './src/index.js'
-    ]
+    ],
+    plugins: [
+        new WebpackNotifierPlugin(),
+    ],
+    watch: true,
+    colors: true,
+    progress: true
 };
