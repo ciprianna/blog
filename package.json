@@ -8,11 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "(git://github.com/ciprianna/blog)"
+    "url": "(git://github.com/ciprianna/blog.git)"
   },
   "keywords": [
     "blog"
   ],
   "author": "Ciprianna Engel",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "webpack": "^1.14.0"
+  }
 }
