@@ -21560,7 +21560,7 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
-	                    'Prrrrr'
+	                    'KITTEH - Meow!'
 	                ),
 	                _react2.default.createElement(_Paragraph2.default, { text: 'First Kitteh' }),
 	                _react2.default.createElement(_Paragraph2.default, { text: 'Second Kitteh' })
